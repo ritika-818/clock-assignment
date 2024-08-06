@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #ffffff;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #212121;
+}
+
+.container{
+    position: relative;
+}
+
+.clock{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock span{
+    position: absolute;
+    inset: 12px;
+    text-align: center;
+}
+.num1 { transform: rotate(30deg); }
+.num2 { transform: rotate(60deg); }
+.num3 { transform: rotate(90deg); }
+.num4 { transform: rotate(120deg); }
+.num5 { transform: rotate(150deg); }
+.num6 { transform: rotate(180deg); }
+.num7 { transform: rotate(210deg); }
+.num8 { transform: rotate(240deg); }
+.num9 { transform: rotate(270deg); }
+.num10 { transform: rotate(300deg); }
+.num11 { transform: rotate(330deg); }
+.num12 { transform: rotate(360deg); }
+
+.clock span b{
+    display: inline-block;
+    font-size: 20px;
+}
+
+.num1 b { transform: rotate(-30deg); }
+.num2 b { transform: rotate(-60deg); }
+.num3 b { transform: rotate(-90deg); }
+.num4 b { transform: rotate(-120deg); }
+.num5 b { transform: rotate(-150deg); }
+.num6 b { transform: rotate(-180deg); }
+.num7 b { transform: rotate(-210deg); }
+.num8 b { transform: rotate(-240deg); }
+.num9 b { transform: rotate(-270deg); }
+.num10 b { transform: rotate(-300deg); }
+.num11 b { transform: rotate(-330deg); }
+.num12 b { transform: rotate(-360deg); }
+
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.hand {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+.hour-hand i {
+    position: absolute;
+    background-color: #ff3d58;
+    width: 4px;
+    height: 74px;
+    border-radius: 8px;
+  }
+  
+.minute-hand i {
+    position: absolute;
+    background-color: #00a6ff;
+    width: 4px;
+    height: 84px;
+    border-radius: 8px;
+  }
+  
+.second-hand i {
+    position: absolute;
+    background-color: #ffffff;
+    width: 4px;
+    height: 94px;
+    border-radius: 8px;
+  }
+
+  .digital {
+    margin-top: 20px;
+    width: 150px;
+    text-align: center;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
